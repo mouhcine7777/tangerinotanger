@@ -18,7 +18,7 @@ const MenuSection = () => {
       title: "Champagne et Vins",
       description: "Sélection premium de champagnes et vins fins",
       image: "/champagne.jpg",
-      slug: "champagne-et-vins"
+      slug: "champagne"
     },
     {
       id: 3,
