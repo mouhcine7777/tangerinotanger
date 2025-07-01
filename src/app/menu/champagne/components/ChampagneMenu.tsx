@@ -1,10 +1,36 @@
 'use client';
 
 import React, { useRef, useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, Variants } from 'framer-motion';
+
+// Type definitions
+interface ChampagneItem {
+  name: string;
+  price: string;
+}
+
+interface WineItem {
+  name: string;
+  bottle: string;
+  half: string;
+  glass: string;
+}
+
+interface SimpleWineSectionProps {
+  title: string;
+  items: ChampagneItem[];
+  className?: string;
+}
+
+interface TableWineSectionProps {
+  title: string;
+  items: WineItem[];
+  hasHalf?: boolean;
+  className?: string;
+}
 
 const ChampagneVinsMenu = () => {
-  const menuRef = useRef(null);
+  const menuRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -29,7 +55,7 @@ const ChampagneVinsMenu = () => {
   }, []);
 
   // Champagnes data
-  const champagnes = [
+  const champagnes: ChampagneItem[] = [
     { name: 'Laurent Perrier Brut', price: '1600' },
     { name: 'Laurent Perrier Rosé', price: '2900' },
     { name: 'Laurent Perrier Brut Magnum', price: '2900' },
@@ -48,7 +74,7 @@ const ChampagneVinsMenu = () => {
       { name: 'CB Signature', bottle: '480', half: '-', glass: '-' },
       { name: 'CB Initiales', bottle: '540', half: '-', glass: '-' },
       { name: 'Château Rosiane', bottle: '580', half: '-', glass: '-' }
-    ],
+    ] as WineItem[],
     rouge: [
       { name: 'Beauvallon', bottle: '290', half: '-', glass: '-' },
       { name: 'Médaillon', bottle: '340', half: '180', glass: '-' },
@@ -58,11 +84,11 @@ const ChampagneVinsMenu = () => {
       { name: 'Azayi', bottle: '590', half: '-', glass: '-' },
       { name: 'Château Rosiane', bottle: '580', half: '-', glass: '-' },
       { name: 'Tandem', bottle: '600', half: '-', glass: '-' }
-    ],
+    ] as WineItem[],
     rose: [
       { name: 'Médaillon', bottle: '340', half: '-', glass: '-' },
       { name: 'S de Siroua', bottle: '390', half: '-', glass: '-' }
-    ]
+    ] as WineItem[]
   };
 
   // World wines data
@@ -76,7 +102,7 @@ const ChampagneVinsMenu = () => {
       { name: 'Bourgogne Chardonnay Rodet', bottle: '540', half: '-', glass: '-' },
       { name: 'Chablis Tremblay', bottle: '560', half: '-', glass: '-' },
       { name: 'Sancerre', bottle: '590', half: '-', glass: '-' }
-    ],
+    ] as WineItem[],
     rouge: [
       { name: 'La Vieille Ferme Ventoux', bottle: '290', half: '-', glass: '-' },
       { name: 'Fleur de Cazeau Bordeaux', bottle: '320', half: '-', glass: '110' },
@@ -93,17 +119,17 @@ const ChampagneVinsMenu = () => {
       { name: 'Marques de Varga Reserva', bottle: '690', half: '-', glass: '-' },
       { name: 'Chamirey Mercury Bourgogne', bottle: '900', half: '-', glass: '-' },
       { name: 'Châteauneuf-du-Pape', bottle: '1200', half: '-', glass: '-' }
-    ],
+    ] as WineItem[],
     rose: [
       { name: 'Manon Côte de Provence', bottle: '320', half: '-', glass: '110' },
       { name: 'M de Minuty', bottle: '440', half: '-', glass: '-' },
       { name: 'Pétales de Rose', bottle: '460', half: '-', glass: '-' },
       { name: 'Minuty Prestige', bottle: '590', half: '-', glass: '-' }
-    ]
+    ] as WineItem[]
   };
 
   // Animation variants
-  const containerVariants = {
+  const containerVariants: Variants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
@@ -114,7 +140,7 @@ const ChampagneVinsMenu = () => {
     }
   };
 
-  const itemVariants = {
+  const itemVariants: Variants = {
     hidden: { 
       opacity: 0, 
       y: 30,
@@ -131,7 +157,7 @@ const ChampagneVinsMenu = () => {
     }
   };
 
-  const sectionVariants = {
+  const sectionVariants: Variants = {
     hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
@@ -144,7 +170,7 @@ const ChampagneVinsMenu = () => {
   };
 
   // Simple wine section component (like champagnes)
-  const SimpleWineSection = ({ title, items, className = "" }) => (
+  const SimpleWineSection: React.FC<SimpleWineSectionProps> = ({ title, items, className = "" }) => (
     <motion.div
       variants={sectionVariants}
       initial="hidden"
@@ -161,7 +187,7 @@ const ChampagneVinsMenu = () => {
       <div className="w-16 h-px bg-gradient-to-r from-amber-400 to-transparent mb-6 mx-auto" />
       
       <motion.div variants={containerVariants} className="space-y-4">
-        {items.map((item, index) => (
+        {items.map((item, index: number) => (
           <motion.div
             key={index}
             variants={itemVariants}
@@ -182,7 +208,7 @@ const ChampagneVinsMenu = () => {
   );
 
   // Table wine section component (with bottle/half/glass columns)
-  const TableWineSection = ({ title, items, hasHalf = true, className = "" }) => (
+  const TableWineSection: React.FC<TableWineSectionProps> = ({ title, items, hasHalf = true, className = "" }) => (
     <motion.div
       variants={sectionVariants}
       initial="hidden"
@@ -207,7 +233,7 @@ const ChampagneVinsMenu = () => {
       </div>
       
       <motion.div variants={containerVariants} className="space-y-2">
-        {items.map((item, index) => (
+        {items.map((item, index: number) => (
           <motion.div
             key={index}
             variants={itemVariants}
