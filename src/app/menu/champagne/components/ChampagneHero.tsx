@@ -19,7 +19,7 @@ const ChampagnesVinsHeroSection = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0">
         <Image
-          src="/champagnes.jpg" // Replace with your champagnes & wines hero image
+          src="/champagne.jpg" // Replace with your champagnes & wines hero image
           alt="Cave à vins et champagnes d'exception"
           fill
           className="object-cover object-center"
