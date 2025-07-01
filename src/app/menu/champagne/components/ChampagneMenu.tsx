@@ -369,13 +369,6 @@ const ChampagneVinsMenu = () => {
 
         </div>
       </div>
-      
-      {/* Bottom decorative divider */}
-      <div className="flex items-center justify-center mt-16 pb-8">
-        <div className="h-px w-16 bg-amber-400/40"></div>
-        <div className="mx-3 text-amber-200/60">✦</div>
-        <div className="h-px w-16 bg-amber-400/40"></div>
-      </div>
     </div>
   );
 };
