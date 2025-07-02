@@ -262,7 +262,11 @@ const ChampagneVinsMenu = () => {
   );
 
   return (
-    <div ref={menuRef} className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden">
+    <div 
+      id="champagnes-vins-menu" 
+      ref={menuRef} 
+      className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 relative overflow-hidden"
+    >
       {/* Background decorative elements */}
       <div className="absolute inset-0">
         <div className="absolute top-20 right-10 w-40 h-40 bg-amber-500/5 rounded-full blur-3xl"></div>
@@ -365,8 +369,7 @@ const ChampagneVinsMenu = () => {
                 hasHalf={false}
               />
             </div>
-          </motion.div>
-
+            </motion.div>
         </div>
       </div>
     </div>

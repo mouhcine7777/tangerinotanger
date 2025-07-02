@@ -25,7 +25,7 @@ const MenuSection = () => {
       title: "Bières et boissons",
       description: "Bières artisanales et boissons fraîches",
       image: "/beer.jpg",
-      slug: "bieres-et-boissons"
+      slug: "beeres"
     },
     {
       id: 4,

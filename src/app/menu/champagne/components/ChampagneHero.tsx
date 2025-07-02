@@ -46,9 +46,9 @@ const ChampagnesVinsHeroSection = () => {
             transition={{ duration: 1.5, delay: 0.5 }}
             className="flex items-center justify-center space-x-4 mb-8"
           >
-            <div className="w-12 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent" />
-            <div className="w-2 h-2 bg-emerald-400 rounded-full" />
-            <div className="w-12 h-px bg-gradient-to-r from-transparent via-emerald-400 to-transparent" />
+            <div className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
+            <div className="w-2 h-2 bg-amber-400 rounded-full" />
+            <div className="w-12 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent" />
           </motion.div>
 
           {/* Main Title */}
@@ -62,7 +62,7 @@ const ChampagnesVinsHeroSection = () => {
             }}
           >
             <span className="block">Champagnes</span>
-            <span className="block text-emerald-400 font-light italic">
+            <span className="block text-amber-400 font-light italic">
               & Vins
             </span>
           </motion.h1>
@@ -79,7 +79,7 @@ const ChampagnesVinsHeroSection = () => {
           >
             Découvrez notre sélection exceptionnelle de champagnes et vins fins, 
             soigneusement choisis pour accompagner vos moments les plus précieux.
-            <span className="block mt-4 text-emerald-300/80 text-base md:text-lg font-extralight italic">
+            <span className="block mt-4 text-amber-300/80 text-base md:text-lg font-extralight italic">
               L'excellence viticole à votre table
             </span>
           </motion.p>
@@ -114,8 +114,8 @@ const ChampagnesVinsHeroSection = () => {
           className="flex flex-col items-center space-y-2 text-white/60 cursor-pointer group"
           onClick={scrollToMenu}
         >
-          <div className="w-px h-8 bg-gradient-to-b from-transparent via-emerald-400/40 to-transparent group-hover:via-emerald-400/80 transition-colors duration-500" />
-          <div className="w-0 h-0 border-l-[4px] border-r-[4px] border-t-[8px] border-l-transparent border-r-transparent border-t-emerald-400/40 group-hover:border-t-emerald-400/80 transition-colors duration-500" />
+          <div className="w-px h-8 bg-gradient-to-b from-transparent via-amber-400/40 to-transparent group-hover:via-amber-400/80 transition-colors duration-500" />
+          <div className="w-0 h-0 border-l-[4px] border-r-[4px] border-t-[8px] border-l-transparent border-r-transparent border-t-amber-400/40 group-hover:border-t-amber-400/80 transition-colors duration-500" />
         </motion.div>
       </motion.div>
 
