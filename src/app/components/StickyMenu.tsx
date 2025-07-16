@@ -10,6 +10,7 @@ const menuItems = [
   { id: 'champagne', label: 'Champagne et Vins', link: '/menu/champagne' },
   { id: 'bieres', label: 'Bières & Spiritueux', link: '/menu/beers' },
   { id: 'tapas', label: 'Tapas & Entrées', link: '/menu/tapas' },
+  { id: 'Spécialités de la maison', label: 'Spécialités de la maison', link: '/menu/specialites-de-la-maison' },
   { id: 'cassolettes', label: 'Cassolettes', link: '/menu/cassolettes' },
   { id: 'poissons', label: 'Poissons & Viandes', link: '/menu/poissons' },
   { id: 'desserts', label: 'Desserts', link: '/menu/desserts' }

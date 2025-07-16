@@ -25,7 +25,7 @@ const MenuSection = () => {
       title: "Bières et boissons",
       description: "Bières artisanales et boissons fraîches",
       image: "/beer.jpg",
-      slug: "beeres"
+      slug: "beers"
     },
     {
       id: 4,
@@ -53,10 +53,17 @@ const MenuSection = () => {
       title: "Poisson et Viande",
       description: "Sélection premium de poissons frais et viandes nobles",
       image: "/poisson.jpg",
-      slug: "poisson-et-viande"
+      slug: "poissons"
     },
     {
       id: 8,
+      title: "Tortiallas & Fritures",
+      description: "Sélection premium de poissons frais et viandes nobles",
+      image: "/tortillas.jpg",
+      slug: "tortillas"
+    },
+    {
+      id: 9,
       title: "Desserts",
       description: "Créations sucrées pour finir en beauté",
       image: "/desserts.jpg",
