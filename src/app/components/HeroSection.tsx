@@ -93,7 +93,7 @@ const RestaurantHero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
             >
-              Saveurs
+              L'Art de la
             </motion.span>
             <motion.span 
               className="block text-amber-400 font-extralight"
@@ -101,7 +101,7 @@ const RestaurantHero = () => {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: 0.7 }}
             >
-              Raffinées
+              Gastronomie
             </motion.span>
           </h1>
         </motion.div>
@@ -113,8 +113,8 @@ const RestaurantHero = () => {
           transition={{ duration: 1, delay: 0.9, ease: "easeOut" }}
           className="text-lg md:text-xl text-slate-300 mb-12 max-w-2xl leading-relaxed font-light"
         >
-          Une expérience culinaire exceptionnelle vous attend. 
-          Découvrez notre sélection de plats créés avec passion et savoir-faire.
+          Où chaque bouchée raconte une histoire, où chaque arôme éveille les sens. 
+          Laissez-vous transporter dans un voyage culinaire orchestré par nos chefs passionnés.
         </motion.p>
 
         {/* CTA Button */}
@@ -137,7 +137,7 @@ const RestaurantHero = () => {
               className="absolute inset-0 bg-gradient-to-r from-slate-800 to-slate-700 translate-x-full group-hover:translate-x-0 transition-transform duration-500 ease-out"
             />
             <span className="relative z-10 flex items-center gap-3">
-              Explorez notre menu
+              Découvrez nos créations
               <motion.svg 
                 width="20" 
                 height="20" 

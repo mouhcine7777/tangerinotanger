@@ -13,6 +13,8 @@ const menuItems = [
   { id: 'Spécialités de la maison', label: 'Spécialités de la maison', link: '/menu/specialites-de-la-maison' },
   { id: 'cassolettes', label: 'Cassolettes', link: '/menu/cassolettes' },
   { id: 'poissons', label: 'Poissons & Viandes', link: '/menu/poissons' },
+  { id: 'Tortiallas & Fritures', label: 'Tortiallas & Fritures', link: '/menu/tortillas' },
+  { id: 'De Rome à New York', label: 'De Rome à New York', link: '/menu/rome-newyork' },
   { id: 'desserts', label: 'Desserts', link: '/menu/desserts' }
 ];
 

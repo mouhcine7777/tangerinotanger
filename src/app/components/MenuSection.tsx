@@ -64,6 +64,13 @@ const MenuSection = () => {
     },
     {
       id: 9,
+      title: "De Rome à New York",
+      description: "Deux mondes, une passion commune",
+      image: "/rome-newyork.jpg",
+      slug: "rome-newyork"
+    },
+    {
+      id: 10,
       title: "Desserts",
       description: "Créations sucrées pour finir en beauté",
       image: "/desserts.jpg",

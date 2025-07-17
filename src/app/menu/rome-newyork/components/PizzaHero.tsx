@@ -3,9 +3,9 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 
-const CocktailsHeroSection = () => {
+const DeRomeANewYorkHeroSection = () => {
   const scrollToMenu = () => {
-    const menuSection = document.getElementById('cocktails-menu');
+    const menuSection = document.getElementById('rome-newyork-menu');
     if (menuSection) {
       menuSection.scrollIntoView({ 
         behavior: 'smooth',
@@ -19,8 +19,8 @@ const CocktailsHeroSection = () => {
       {/* Background Image with Parallax Effect */}
       <div className="absolute inset-0">
         <Image
-          src="/cocktails.jpg" // Replace with your cocktails hero image
-          alt="Cocktails d'exception, créations mixologiques raffinées"
+          src="/rome-newyork.jpg" // Replace with your Rome to New York hero image
+          alt="De Rome à New York, voyage culinaire entre deux capitales"
           fill
           className="object-cover object-center"
           priority
@@ -61,9 +61,9 @@ const CocktailsHeroSection = () => {
               textShadow: '0 4px 20px rgba(0, 0, 0, 0.8), 0 8px 40px rgba(0, 0, 0, 0.6)'
             }}
           >
-            <span className="block">Cocktails</span>
+            <span className="block">De Rome</span>
             <span className="block text-amber-400 font-light italic">
-              d'Exception
+              à New York
             </span>
           </motion.h1>
 
@@ -77,10 +77,10 @@ const CocktailsHeroSection = () => {
               textShadow: '0 2px 12px rgba(0, 0, 0, 0.8)'
             }}
           >
-            Découvrez nos créations mixologiques uniques, élaborées par notre équipe
-            de barmen passionnés avec des spiritueux d'exception et des ingrédients raffinés.
+            Un voyage culinaire extraordinaire entre deux capitales gastronomiques,
+            où la tradition italienne rencontre l'innovation américaine.
             <span className="block mt-4 text-amber-300/80 text-base md:text-lg font-extralight italic">
-              L'art du cocktail sublimé
+              Deux mondes, une passion commune
             </span>
           </motion.p>
 
@@ -95,7 +95,7 @@ const CocktailsHeroSection = () => {
               onClick={scrollToMenu}
               className="px-8 py-3 border border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300 text-sm tracking-wider uppercase font-light"
             >
-              Explorer notre Carte
+              Explorer le Voyage
             </button>
           </motion.div>
         </motion.div>
@@ -125,4 +125,4 @@ const CocktailsHeroSection = () => {
   );
 };
 
-export default CocktailsHeroSection;
+export default DeRomeANewYorkHeroSection;
