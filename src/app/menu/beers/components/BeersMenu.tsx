@@ -370,9 +370,6 @@ const BieresMenu = () => {
             transition={{ duration: 0.8, delay: 1.2 }}
             className="mb-20"
           >
-            <h2 className="text-4xl font-light text-white text-center mb-12">
-              Spiritueux Premium
-            </h2>
             <div className="w-24 h-px bg-gradient-to-r from-transparent via-amber-400 to-transparent mx-auto mb-12" />
             
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

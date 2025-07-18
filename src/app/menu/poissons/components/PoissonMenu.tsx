@@ -84,6 +84,11 @@ const PoissonViandesMenu = () => {
       description: "Cubes de filet de bœuf tendre, grillés à point sur brochettes"
     },
     {
+      name: "BROCHETTES DE POULET",
+      price: "120",
+      description: "Morceaux de poulet marinés et grillés sur brochettes"
+    },
+    {
       name: "ÉMINCÉ DE POULET",
       price: "260",
       subtitle: "Sauce aux champignons et riz basmati",
@@ -104,6 +109,16 @@ const PoissonViandesMenu = () => {
       name: "FILET DE BŒUF GRILLÉ",
       price: "380",
       description: "Pièce noble du bœuf, filet tendre et juteux grillé à votre convenance"
+    },
+    {
+      name: "TARTINE DE FILET DE BOEUF",
+      price: "90",
+      description: "Tartine garnie de filet de bœuf"
+    },
+    {
+      name: "POULET À L'AIL",
+      price: "90",
+      description: "Poulet savoureux préparé à l'ail"
     }
   ];
 

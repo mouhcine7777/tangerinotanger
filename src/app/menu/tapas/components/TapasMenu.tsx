@@ -80,6 +80,12 @@ const TapasEntreesMenu: React.FC = () => {
       description: "Croquettes raffinées au jambon de qualité supérieure"
     },
     {
+      name: "CROQUETTES DE POISSON",
+      price: "80",
+      shortDescription: "Bouchées croustillantes de poisson",
+      description: "Croquettes dorées garnies de poisson frais"
+    },
+    {
       name: "TORTILLA ESPAGNOLE",
       price: "70",
       shortDescription: "Omelette traditionnelle aux pommes de terre",
@@ -143,6 +149,12 @@ const TapasEntreesMenu: React.FC = () => {
       name: "POULPE À LA GALICIENNE",
       price: "140",
       shortDescription: "Poulpe, purée de pommes de terre",
+      description: "Spécialité du nord de l'Espagne aux saveurs authentiques"
+    },
+    {
+      name: "POULE À LA GALICIENNE",
+      price: "140",
+      shortDescription: "Poule, purée de pommes de terre",
       description: "Spécialité du nord de l'Espagne aux saveurs authentiques"
     },
     {
@@ -246,6 +258,18 @@ const TapasEntreesMenu: React.FC = () => {
       price: "120",
       shortDescription: "Saumon frais, 5 baies, gros sel, poivre, câpres, citron, huile d'olive",
       description: "Saumon frais mariné aux épices et aromates délicats"
+    },
+    {
+      name: "TAPENADE MAISON AUX OLIVES NOIRES",
+      price: "60",
+      shortDescription: "Pâte d'olives noires traditionnelle",
+      description: "Tapenade préparée selon notre recette maison"
+    },
+    {
+      name: "GUACAMOLE AVEC TORTILLA CHIPS",
+      price: "70",
+      shortDescription: "Avocat écrasé avec chips croustillantes",
+      description: "Guacamole frais accompagné de tortilla chips dorées"
     }
   ];
 

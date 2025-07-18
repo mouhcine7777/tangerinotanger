@@ -58,7 +58,7 @@ const MenuSection = () => {
     {
       id: 8,
       title: "Tortiallas & Fritures",
-      description: "Sélection premium de poissons frais et viandes nobles",
+      description: "Savourez nos tortillas artisanales et fritures dorées à la perfection",
       image: "/tortillas.jpg",
       slug: "tortillas"
     },
