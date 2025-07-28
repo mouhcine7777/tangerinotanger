@@ -221,7 +221,7 @@ const TortillasFrituresMenu = () => {
                   {/* Content */}
                   <div className="flex justify-between items-start mb-4">
                     <div className="flex-1">
-                      <h3 className="text-lg font-semibold text-white group-hover:text-amber-200 transition-colors duration-300 leading-tight">
+                      <h3 className="text-lg font-bold text-white group-hover:text-amber-200 transition-colors duration-300 leading-tight">
                         {item.name}
                       </h3>
                     </div>
@@ -335,7 +335,7 @@ const TortillasFrituresMenu = () => {
                     {/* Content */}
                     <div className="flex justify-between items-start mb-4">
                       <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-white group-hover:text-amber-200 transition-colors duration-300 leading-tight">
+                        <h3 className="text-lg font-bold text-white group-hover:text-amber-200 transition-colors duration-300 leading-tight">
                           {item.name}
                         </h3>
                       </div>
